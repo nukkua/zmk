@@ -27,7 +27,7 @@
 &kp TAB    &kp EXCL   &kp FSLH  &kp LT     &kp GT     &kp PLUS     &kp BSLH   &kp LBKT  &kp RBKT   &kp TILDE  &kp GRAVE  &kp EQUAL
 &kp PRCNT  &kp CARET  &kp DQT   &kp PIPE   &kp DLLR   &kp AMPS     &kp HASH   &kp LPAR  &kp RPAR   &kp SEMI   &kp SQT   &kp GRAVE
 &kp LSHFT  &kp SQT    &kp SQT   &kp DOT    &kp QMARK  &kp SEMI     &kp AT     &kp LBRC  &kp RBRC   &kp COLON  &kp DOT   &kp RSHFT
-                                &kp LALT   &trans     &kp RET      &kp SPACE  &mo 2     &kp LSHFT
+                                &kp LALT   &trans     &kp RET      &kp BSPC   &mo 2     &kp LSHFT
             >;
         };
 
