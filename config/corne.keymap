@@ -15,7 +15,7 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp K  &kp Y     &kp U      &kp COMMA  &kp MINUS    &kp M      &kp H  &kp P      &kp J    &kp V      &kp EQUAL
+&kp TAB    &kp K  &kp Y     &kp U      &kp COMMA  &kp MINUS    &kp V      &kp M  &kp H      &kp P    &kp J      &kp EQUAL
 &kp LCTRL  &kp D  &kp I     &kp E      &kp A      &kp O        &kp C      &kp S  &kp N      &kp T    &kp R      &kp W
 &kp GRAVE  &kp X  &kp FSLH  &kp DOT    &kp QMARK  &kp SEMI     &kp F      &kp G  &kp L      &kp B    &kp Q      &kp RSHFT
                            &kp LALT    &mo 1      &kp RET      &kp SPACE  &mo 2  &kp LSHFT
@@ -24,7 +24,7 @@
 
         symbols_layer {
             bindings = <
-&kp TAB    &kp EXCL   &kp FSLH  &kp LT     &kp GT     &kp PLUS     &kp LBKT   &kp RBKT  &kp TILDE  &kp GRAVE  &kp BSLH  &kp EQUAL
+&kp TAB    &kp EXCL   &kp FSLH  &kp LT     &kp GT     &kp PLUS     &kp LBKT   &kp LBKT  &kp RBKT  &kp TILDE  &kp GRAVE  &kp BSLH
 &kp PRCNT  &kp CARET  &kp DQT   &kp PIPE   &kp DLLR   &kp AMPS     &kp HASH   &kp LPAR  &kp RPAR   &kp SEMI   &kp SQT   &kp GRAVE
 &kp LSHFT  &kp SQT    &kp SQT   &kp DOT    &kp QMARK  &kp SEMI     &kp AT     &kp LBRC  &kp RBRC   &kp COLON  &kp DOT   &kp RSHFT
                                 &kp LALT   &trans     &kp RET      &kp SPACE  &mo 2     &kp LSHFT
