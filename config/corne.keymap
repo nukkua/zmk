@@ -20,6 +20,20 @@
         };
     };
 
+    macros {
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+        };
+
+        dcolon: dcolon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp COLON>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -37,13 +51,13 @@
 &kp TAB    &kp EXCL   &kp FSLH  &kp LT     &kp GT     &kp PLUS     &kp BSLH   &kp LBKT  &kp RBKT   &kp TILDE  &kp GRAVE  &kp EQUAL
 &kp PRCNT  &kp CARET  &kp DQT   &kp PIPE   &kp DLLR   &kp AMPS     &kp HASH   &kp LPAR  &kp RPAR   &kp SEMI   &kp SQT   &kp GRAVE
 &kp LSHFT  &kp SQT    &kp SQT   &kp DOT    &kp QMARK  &kp SEMI     &kp AT     &kp LBRC  &kp RBRC   &kp COLON  &kp DOT   &kp LS(N8)
-                                &mo 2      &trans     &kp RET      &kp BSPC   &kp LS(N8) &kp LALT
+                                &mo 2      &trans     &kp RET      &kp BSPC   &kp LS(N8) &kp LS(LALT)
             >;
         };
 
         num_layer {
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp BSPC   &kp UP    &kp H      &kp P      &kp RCTRL  &kp Z
+&arrow     &dcolon      &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp BSPC   &kp UP    &kp H      &kp P      &kp RCTRL  &kp Z
 &kp CAPS   &kp N6     &kp N3    &kp N1    &kp N2     &kp N7       &kp N9     &kp N4    &kp N0     &kp N5     &kp N8     &kp R
 &kp LSHFT  &kp COMMA  &kp FSLH  &kp SQT   &kp DOT    &kp F        &kp SEMI   &kp G     &kp L      &kp B      &kp DOT    &kp RSHFT
                                 &trans     &mo 1      &kp RET      &kp SPACE  &kp LSHFT  &kp LALT
