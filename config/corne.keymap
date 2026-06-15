@@ -46,7 +46,7 @@
 &kp TAB    &kp K  &kp Y     &kp U      &kp COMMA  &kp MINUS    &kp V     &kp M  &kp H      &kp P    &kp J      &kp Z
 &kp LCTRL  &kp D  &kp I     &kp E      &kp A      &kp O        &kp C      &kp S  &kp N      &kp T    &kp R      &kp W
 &kp GRAVE  &kp X  &kp FSLH  &kp DOT    &kp QMARK  &kp SEMI     &kp F      &kp G  &kp L      &kp B    &kp Q      &kp RSHFT
-                           &mo 2    &mo 1      &kp RET      &kp SPACE  &kp LSHFT  &kp LALT
+                           &mo 3    &mo 1      &kp RET      &kp SPACE  &kp LSHFT  &kp LALT
             >;
         };
 
@@ -73,7 +73,7 @@
 &bt BT_SEL 1 &arrow   &dcolon      &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp BSPC   &kp UP    &kp H      &kp P      &kp RCTRL  &kp Z
 &kp CAPS   &kp N6     &kp N3    &kp N1    &kp N2     &kp N7       &kp N9     &kp N4    &kp N0     &kp N5     &kp N8     &kp R
 &kp LSHFT  &kp COMMA  &kp FSLH  &kp SQT   &kp DOT    &kp F        &kp SEMI   &kp G     &kp L      &kp B      &kp DOT    &kp RSHFT
-                                &trans     &mo 1      &kp RET      &kp SPACE  &kp LSHFT  &mo 3
+                                &trans     &mo 1      &kp RET      &kp SPACE  &kp LSHFT  &mo 2
             >;
         };
     };
