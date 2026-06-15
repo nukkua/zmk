@@ -10,13 +10,13 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    behaviors {
-        v_caps: v_caps {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
+    combos {
+        compatible = "zmk,combos";
+
+        esc_combo {
+            timeout-ms = <30>;
+            key-positions = <13 14>;
+            bindings = <&kp ESC>;
         };
     };
 
@@ -43,7 +43,7 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp K  &kp Y     &kp U      &kp COMMA  &kp MINUS    &v_caps LS(V) V &kp M  &kp H      &kp P    &kp J      &kp Z
+&kp TAB    &kp K  &kp Y     &kp U      &kp COMMA  &kp MINUS    &kp V     &kp M  &kp H      &kp P    &kp J      &kp Z
 &kp LCTRL  &kp D  &kp I     &kp E      &kp A      &kp O        &kp C      &kp S  &kp N      &kp T    &kp R      &kp W
 &kp GRAVE  &kp X  &kp FSLH  &kp DOT    &kp QMARK  &kp SEMI     &kp F      &kp G  &kp L      &kp B    &kp Q      &kp RSHFT
                            &mo 2    &mo 1      &kp RET      &kp SPACE  &kp LSHFT  &kp LALT
@@ -55,7 +55,16 @@
 &kp TAB    &kp EXCL   &kp FSLH  &kp LT     &kp GT     &kp PLUS     &kp BSLH   &kp LBKT  &kp RBKT   &kp TILDE  &kp GRAVE  &kp EQUAL
 &kp PRCNT  &kp CARET  &kp DQT   &kp PIPE   &kp DLLR   &kp AMPS     &kp HASH   &kp LPAR  &kp RPAR   &kp SEMI   &kp SQT   &kp GRAVE
 &kp LSHFT  &kp SQT    &kp SQT   &kp DOT    &kp QMARK  &kp SEMI     &kp AT     &kp LBRC  &kp RBRC   &kp COLON  &kp DOT   &kp LS(N8)
-                                &mo 2      &trans     &kp RET      &kp BSPC   &kp LS(N8) &sk LS(LALT)
+                                &mo 2      &trans     &kp RET      &kp BSPC   &kp LS(N8) &mo 3
+            >;
+        };
+
+        symbols_alt_layer {
+            bindings = <
+&trans      &kp LA(LS(K))  &kp LA(LS(Y))     &kp LA(LS(U))      &trans          &trans        &kp LA(LS(V))  &kp LA(LS(M))  &kp LA(LS(H))      &kp LA(LS(P))    &kp LA(LS(J))      &kp LA(LS(Z))
+&trans      &kp LA(LS(D))  &kp LA(LS(I))     &kp LA(LS(E))      &kp LA(LS(A))   &kp LA(LS(O)) &kp LA(LS(C))  &kp LA(LS(S))  &kp LA(LS(N))      &kp LA(LS(T))    &kp LA(LS(R))      &kp LA(LS(W))
+&trans      &kp LA(LS(X))  &trans            &trans             &trans          &trans        &kp LA(LS(F))  &kp LA(LS(G))  &kp LA(LS(L))      &kp LA(LS(B))    &kp LA(LS(Q))      &trans
+                                      &trans          &trans            &trans             &trans        &trans          &trans
             >;
         };
 
