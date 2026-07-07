@@ -10,16 +10,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        esc_combo {
-            timeout-ms = <30>;
-            key-positions = <13 14>;
-            bindings = <&kp ESC>;
-        };
-    };
-
     macros {
         arrow: arrow {
             compatible = "zmk,behavior-macro";
